@@ -1,0 +1,89 @@
+#03/02/2021 04:40
+
+#0 Python Tutorial | Python Programming Tutorial for Beginners | Course Introduction
+# https://www.youtube.com/watch?v=QXeEoD0pB3E&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=1
+#Telusko
+#1.25M subscribers
+
+# Day-1: 4 Basic Concepts (4 hours): print, variable, input, conditionals
+
+#Execute Python 		    		  # 1st step
+#output 					            # 1st step
+#variable 				            # 1st step
+#variable type 				        # 1st step
+#math operations - 2hrs 			# 1st step
+#take input from user - 1/2 an hour 	# 1st step
+#conditional, using 'if else' condition	# 1st step
+#List - 2hrs				          # 1st step
+#While loop				            # Needs Improvement
+#master functions for 2 hours define parameters
+
+print('ragesh\'s "laptop"')
+
+'ragesh' + 'ragesh'
+
+10 * 'ragesh'
+#'rageshrageshrageshrageshrageshrageshrageshrageshrageshragesh'
+
+print('c:\docs\navin')
+#c:\docs
+#avin
+
+print(r"c:\docs\navin")
+#c:\docs\navin
+
+>>> 2 + 3
+5
+>>> x = 2
+>>> x + 3
+5
+>>> y = 3
+>>> x + y
+5
+>>>
+
+>>> x + 10
+19
+>>> 19 + y
+22
+>>> _ + y
+25
+>>>
+
+>>> name = ''
+>>> name = 'youtube'
+>>> name
+'youtube'
+
+>>> name + ' rocks'
+'youtube rocks'
+
+name[0]
+'y'
+
+name[6]
+'e'
+
+name[8]
+Error
+
+name[1:4]
+'out'
+
+'my ' + name[3:]
+'my tube'
+
+myname = 'Navin Reddy'
+len(myname)
+11
+
+# LIST
+
+
+
+
+
+
+
+
+
