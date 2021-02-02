@@ -182,19 +182,13 @@ print(sqrt(36))
 
 name = input("Enter your name: ")
 print("Hello " + name + "!")
-------
-Enter your name: Mike
-Hello Mike!
+
 
 name = input("Enter your name: ")
 name = input("Enter your last name: ")
 age = input("Enter your age: ")
 print("Hello " + name + "! You are " + age + " years old.")
-------
-Enter your name: John
-Enter your last name: Snow
-Enter your age: 35
-Hello Snow! You are 35 years old.
+
 
 
 # BUILDING A BASIC CALCULATOR
