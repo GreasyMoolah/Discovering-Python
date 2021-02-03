@@ -18,19 +18,103 @@
 #While loop				            # Needs Improvement
 #master functions for 2 hours define parameters
 
-print('ragesh\'s "laptop"')
+# STRING
+# STRING
+# STRING
+# STRING
+# STRING
 
-'ragesh' + 'ragesh'
+>>> 2
+2
 
-10 * 'ragesh'
-#'rageshrageshrageshrageshrageshrageshrageshrageshrageshragesh'
+>>> 2 + 3
+5
 
-print('c:\docs\navin')
-#c:\docs
-#avin
+>>> 9 - 8
+1
 
-print(r"c:\docs\navin")
-#c:\docs\navin
+>>> 
+4 * 6
+24
+
+>>> 8 / 4
+2.0
+
+>>> 5 / 2
+2.5
+
+>>> 5 // 2 # Integer Division or Float Division
+2
+
+>>>8 + 9 - 10
+7
+
+>>> 8 + 9 -
+  File "<stdin>", line 1
+    8 + 9 -
+           ^
+SyntaxError: invalid syntax
+
+>>>8 + 2 * 3
+14
+
+>>> (8 + 2 ) * 3
+30
+
+>>> 2 ** 3 # Power of
+8
+
+>>> 10 // 3
+3
+
+>>> 10 % 3            # modulus operator - "10 mod 3"
+1
+
+>>> 'navin'
+'navin'
+
+>>> print('navin')
+navin
+
+>>> print('navin's laptop')
+  File "<stdin>", line 1
+    print('navin's laptop')
+                 ^
+SyntaxError: invalid syntax
+
+>>>print("navin's laptop")
+navin's laptop
+
+>>> print('navin "laptop"')
+navin "laptop"
+
+>>>print('navin's "laptop"')
+  File "<stdin>", line 1
+    print('navin's "laptop"')
+                 ^
+SyntaxError: invalid syntax
+
+>>> print('navin\'s "laptop"')
+navin's "laptop"
+
+>>>'navin' + 'navin'
+'navinnavin'
+
+>>> 10 * 'navin'
+'navinnavinnavinnavinnavinnavinnavinnavinnavinnavin'
+
+>>>print('c:\docs\navin')
+c:\docs
+avin
+
+>>> print(r'c:\docs\navin')      # raw string
+c:\docs\navin
+
+# VARIABLE
+# VARIABLE
+# VARIABLE
+# VARIABLE
+# VARIABLE
 
 >>> 2 + 3
 5
@@ -40,44 +124,289 @@ print(r"c:\docs\navin")
 >>> y = 3
 >>> x + y
 5
->>>
+>>> x = 9
+>>> x + y
+12
+>>> x
+9
+
+>>> abc
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'abc' is not defined
 
 >>> x + 10
 19
->>> 19 + y
-22
->>> _ + y
-25
->>>
 
->>> name = ''
+>>> _ + y
+22
+
 >>> name = 'youtube'
+
 >>> name
 'youtube'
 
 >>> name + ' rocks'
 'youtube rocks'
 
-name[0]
-'y'
+>>> name ' rocks'
+  File "<stdin>", line 1
+    name ' rocks'
+                 ^
+SyntaxError: EOL while scanning string literal
 
-name[6]
+>>> name[0]
+'y'
+               # y o u t u b e
+>>> name[6]    # 0 1 2 3 4 5 6
 'e'
 
-name[8]
-Error
+>>> name[8]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
 
-name[1:4]
+>>> name[-1]
+'e'
+
+>>> name[-2]
+'b'
+
+>>> name[-7]
+'y'
+
+>>> name[0:2]
+'yo'            # y o u t u b e
+                # 0 1 2 3 4 5 6
+>>> name[1:4]  # -7-6-5-4-3-2-1
 'out'
 
-'my ' + name[3:]
-'my tube'
+>>> name[1:]
+'outube'
 
-myname = 'Navin Reddy'
-len(myname)
+>>> name[:4]
+'yout'
+
+>>> name[3:10]
+'tube'
+
+>>> name[0:3] = 'my'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+
+>>> name[0] = 'R'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+
+>>> 'my ' + name[3:] # y o u t u b e
+'my tube'            # 0 1 2 3 4 5 6
+
+>>> myname = 'navin reddy'
+>>> len(myname)
 11
 
 # LIST
+# LIST
+# LIST
+# LIST
+# LIST
+
+>>> nums = [25,12,36,95,14]
+>>> nums
+[25, 12, 36, 95, 14]
+
+>>> nums[0]
+25
+
+>>> nums[5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+
+>>> nums[4]
+14
+
+>>> nums[2:]
+[36, 95, 14]
+
+>>> nums[-1]
+14
+
+>>> nums[-5]
+25
+
+>>> names = ['navin','kiran','john']
+
+>>> values = [9.5, 'Navin', 25]
+
+>>> mil = [nums, names]
+
+>>> mil
+[[25, 12, 36, 95, 14], ['navin', 'kiran', 'john']]
+
+>>> nums.append(45)
+[25, 12, 36, 95, 14, 45]
+
+#append
+#clear
+#copy
+#count
+#extend
+#index
+#insert
+#pop
+#remove
+#reverse
+
+>>> nums.insert(2,77)
+>>> nums
+[25, 12, 77, 36, 95, 14, 45]
+
+>>> nums.remove(14)
+>>> nums
+[25, 12, 77, 36, 95, 45]
+>>> nums.pop(1)
+12
+
+>>> nums.pop()
+45
+
+>>> del nums[2:]
+>>> nums
+[25, 77]
+
+>>> nums.extend([29,12,14,36])
+>>> nums
+[25, 77, 29, 12, 14, 36]
+
+>>> min(nums)
+12
+
+>>> max(nums)
+77
+
+>>> sum(nums)
+193
+
+>>> nums.sort()
+>>> nums
+[12, 14, 25, 29, 36, 77]
+
+# TUPLES AND SET
+# TUPLES AND SET
+# TUPLES AND SET
+# TUPLES AND SET
+# TUPLES AND SET
+
+>>> tup = (21,36,14,25)
+>>> tup
+(21, 36, 14, 25)
+
+>>> tup[1]
+36
+>>> tup[1] = 33
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+
+>>> s = {22,25,14,21,5}
+>>> s
+{5, 21, 22, 25, 14}
+
+>>> s = {25,14,98,63,75,98}
+>>> s
+{98, 25, 75, 14, 63}
+
+>>> s[2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'set' object is not subscriptable
+
+# DICTIONARY
+# DICTIONARY
+# DICTIONARY
+# DICTIONARY
+# DICTIONARY
+
+>>> data = {1:'Navin',2:'Kiran',4:'Harsh'}
+>>> data
+{1: 'Navin', 2: 'Kiran', 4: 'Harsh'}
+
+>>> data[4]
+'Harsh'
+
+>>> data[1]
+'Navin'
+
+>>> data[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 3
+
+>>> data.get(1)
+'Navin'
+
+>>> data.get(3)
+>>> print(data.get(3))
+None
+
+>>> data.get(1,'Not Found')
+'Navin'
+
+>>> data.get(3,'Not Found')
+'Not Found'
+
+>>> keys = ['Navin','Kiran','Harsh']
+>>> values = ['Python','Java','JS']
+>>> data = dict(zip(keys,values))         # merging dictionaries
+>>> data
+{'Navin': 'Python', 'Kiran': 'Java', 'Harsh': 'JS'}
+
+>>>>>> data['Kiran']
+'Java'
+
+>>> data['Monika']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'Monika'
+
+>>>data['Monika'] = 'CS'
+>>> data
+{'Navin': 'Python', 'Kiran': 'Java', 'Harsh': 'JS', 'Monika': 'CS'}
+
+>>> del data['Harsh']
+>>> data
+{'Navin': 'Python', 'Kiran': 'Java', 'Monika': 'CS'}
+
+>>>>>> prog = {'JS':'Atom', 'CS':'VS', 'Python': ['Pycharm', 'Sublime'],'Java':{'JSE':'Netbeans','JEE':'Eclipse'}}
+>>> prog['JS']
+'Atom'
+
+>>> prog['Python']
+['Pycharm', 'Sublime']
+
+>>> prog['Python'][1]
+'Sublime'
+
+>>> prog['Java']
+{'JSE': 'Netbeans', 'JEE': 'Eclipse'}
+
+>>> prog['Java']['JEE']
+'Eclipse'
+
+# end at 8:08.
+# end at 8:08.
+
+
+
+
+
+
+
+
+
 
 
 
