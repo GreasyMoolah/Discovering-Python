@@ -1,0 +1,186 @@
+# Day-1: 4 Basic Concepts (4 hours) | Operators in Python
+
+#Arithmetic Operators
+#Relational Operators
+#Logical Operators
+#Unary Operators
+
+#Arithmetic Operators
+#Arithmetic Operators
+#Arithmetic Operators
+#Arithmetic Operators
+#Arithmetic Operators
+>>> x = 2
+>>> y = 3
+>>> x + y
+5
+
+>>> x - y
+-1
+
+>>> x * y
+6
+
+>>> x / y
+0.6666666666666666
+
+>>> x = 8   #Assignment Operators    # Assignment Operators assigning X for 8
+
+>>> x = x + 2
+>>> x
+4
+
+>>> x += 2
+>>> x
+6
+
+>>> x *= 3
+>>> x
+18
+
+>>> a,b = 5,6
+>>> a
+5
+
+>>> b
+6
+
+>>> n = 7
+>>> n
+7
+
+>>> -n
+-7
+
+>>> n
+7
+
+>>> n =-n
+>>> n
+-7
+
+#Relational Operators
+#Relational Operators
+#Relational Operators
+#Relational Operators
+#Relational Operators
+>>> a < b
+True
+
+>>> a == b
+False
+
+>>> a = 6
+>>> a == b
+True
+
+>>> a <= b
+True
+
+>>> a >= b
+True
+
+>>> a != b
+False
+
+>>> b = 7
+>>> a != b
+True
+
+#Logical Operators
+#Logical Operators
+#Logical Operators
+#Logical Operators
+#Logical Operators
+
+>>> a = 5
+>>> b = 4
+>>> a < 8 and b < 5
+True
+
+>>> a < 8 and b < 2
+False
+
+>>> a < 8 or b < 2
+True
+
+>>> x = True
+>>> x
+True
+
+>>> not x
+False
+
+>>> x = not x
+>>> x
+False
+
+>>> bin(25)
+'0b11001'
+
+>>> 0b0101
+5
+
+>>> oct(25)
+'0o31'
+
+>>> hex(25)
+'0x19'
+
+>>> hex(10)
+'0xa'
+
+>>> 0xf
+15
+
+>>> 0b110011010
+410
+
+#Unary Operators
+
+#Swap 2 Variables in Python
+#Swap 2 Variables in Python
+#Swap 2 Variables in Python
+#Swap 2 Variables in Python
+#Swap 2 Variables in Python
+
+a = 5
+b = 6
+
+#temp = a                   # 1 use of third variable
+
+# a = a + b # 5 + 6 = 11    # 2 use of operators
+# b = a - b # a11 - 6 = 5 -> b = 5
+# a = a - b # 11 - 5 = 6 -> a = 6
+
+# a = a ^ b # research      # 3 use of XOR
+# b = a ^ b # the use
+# a = a ^ b # of XOR, find how XOR works
+
+a,b = b,a  #                # 4 use of Stack or Rot_two
+
+print(a)
+print(b)
+#-----
+#6
+#5
+
+# IDLE Previous Command | Clear Screen?
+
+# Python BitWise Operators
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
