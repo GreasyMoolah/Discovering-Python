@@ -1,0 +1,64 @@
+# 07/02/2021 21:50
+
+# Working with PyCharm | Run | Debug | Trace | py file
+
+#C:\Users\USER>cd Desktop
+
+#C:\Users\USER\Desktop>cd "python codes"
+
+#C:\Users\USER\Desktop>python MyCode.py
+
+x = 5
+y = 6
+z = x + y
+print(z)
+#------
+#11
+
+# User input in Python | Command Line Input
+# User input in Python | Command Line Input
+# User input in Python | Command Line Input
+# User input in Python | Command Line Input
+# User input in Python | Command Line Input
+
+x = input("Enter 1st number: ")
+a = int(x)
+y = input("Enter 2nd number: ")
+b = int(y)
+x = a + b
+#------
+#Enter 2nd number:9
+#Enter 2nd number:5
+#14
+
+x = int(input("Enter 1st number: "))
+y = int(input("Enter 2nd number: ")
+z = x + y
+#------
+#Enter 1st number:9
+#Enter 2st number:5
+#14
+
+ch = input('enter a char')[0]
+print(ch)
+#------
+#enter a char2 + 6 - 1
+#2
+
+result = eval(input('enter an expr'))
+print(result)
+#------
+#7
+
+import sys
+
+x = int(sys.argv[1])   # arguement values
+y = int(sys.argv[2])
+z = x + y
+print(z)
+
+# 07/02/2021 22:50
+
+
+
+
