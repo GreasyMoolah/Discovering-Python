@@ -1,0 +1,281 @@
+#08/02/2021 3:23
+
+# 19 Python Tutorial for Beginners | If Elif Else Statement in Python
+
+#CPU
+#CU - Central Unit
+#MU - Memory Unit
+#ALU - Arithmetic/Logic Unit
+
+#if
+#if else
+#if elif else
+#nested if
+
+# IF STATEMENT
+
+if True:
+    print("I'm right")
+#------
+I'm right
+
+if False:
+    print("I'm right")
+#------
+              # no execution - 0
+
+
+if False:
+    print("I'm right")   # it belongs to the If statement.
+print("Bye")  # if not indented it does not belong to the If statement
+#------
+Bye
+
+
+
+x = 3                         # Printing Even Numbers
+r = x % 2
+
+if r == 0:
+    print("Even")
+
+
+
+print("Bye")
+#------
+#Bye
+
+x = 3
+r = x % 2
+
+if r == 0:
+    print("Even")
+
+
+print("Bye")
+#------
+#Bye
+
+
+
+x = 8
+r = x % 2
+
+if r == 0:
+    print("Even")
+
+
+print("Bye")
+#------
+#Even
+#Bye
+
+
+x = 7
+r = x % 2
+
+if r == 0:
+    print("Even")
+
+print("Odd")
+
+print("Bye")
+#------
+#Odd
+#Bye
+
+
+x = 8
+r = x % 2
+
+if r == 0:
+    print("Even")
+
+print("Odd")
+
+print("Bye")
+#------
+#Even
+#Odd
+#Bye
+
+
+
+x = 8
+r = x % 2
+
+if r == 0:
+    print("Even")
+    
+if (r==1):
+    print("Odd")
+
+print("Bye")
+------
+#Even
+#Bye
+
+
+x = 9
+r = x % 2
+
+if r == 0:
+    print("Even")
+    
+if (r==1):
+    print("Odd")
+
+print("Bye")
+------
+#Odd
+#Bye
+
+
+
+x = 9
+r = x % 2
+
+if r == 0:
+    print("Even")
+else:                           # use of else
+    print("Odd")
+
+print("Bye")
+------
+#Even
+#Bye
+
+
+
+x = 8
+r = x % 2
+
+if r == 0:                      # use of Nested If
+    print("Even")
+    if x > 5:
+        print("Great")
+    else:
+        print("Not so great")
+else:
+    print("Odd")
+
+print("Bye")
+#------
+#Even
+#Great
+#Bye
+
+
+
+x = 3
+r = x % 2
+
+if r == 0:                     # use of Nested If
+    print("Even")
+    if x > 5:            # Nested If
+        print("Great")
+    else:                # Nested If
+        print("Not so great")
+else:
+    print("Odd")
+
+print("Bye")
+#------
+#Odd
+#Bye
+
+
+
+x = 2
+
+if x==1:                        # assigning value
+    print("One")
+
+if (x==2):
+    print("Two")
+
+if (x==3):
+    print("Three")
+
+if (x==4):
+    print("Four")
+#------
+#Two
+
+
+
+x = 4
+
+if x==1:                       # assigning value
+    print("One")
+
+if (x==2):
+    print("Two")
+
+if (x==3):
+    print("Three")
+
+if (x==4):
+    print("Four")
+#------
+#Four
+
+
+
+
+x = 1
+                              # assigning value
+if x==1:                      # use of if elif and else
+    print("One")
+
+elif (x==2):
+    print("Two")
+
+elif (x==3):
+    print("Three")
+
+elif (x==4):
+    print("Four")
+#------
+#One
+
+
+
+x = 2
+
+if x==1:
+    print("One")
+
+elif (x==2):
+    print("Two")
+
+elif (x==3):
+    print("Three")
+
+elif (x==4):
+    print("Four")
+#------
+#Two
+
+
+
+x = 5
+
+if x==1:
+    print("One")
+
+elif (x==2):
+    print("Two")
+
+elif (x==3):
+    print("Three")
+
+elif (x==4):
+    print("Four")
+    
+else:
+    print("Wrong input")
+#------
+#Wrong input
+
+#08/02/2021 5:30
