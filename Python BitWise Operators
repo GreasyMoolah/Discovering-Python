@@ -1,0 +1,229 @@
+#07/02/2021 16:10
+# Python BitWise Operators
+
+# BitWise Operators
+# Complement Operator (~) Tilde Operator
+# And (&)
+# Or (|)
+# XOR (^)
+# Left Shift (<<)
+# Right Shift (>>)
+
+# Complement Operator (~) Tilde Operator
+# Complement Operator (~) Tilde Operator
+# Complement Operator (~) Tilde Operator
+# Complement Operator (~) Tilde Operator
+# Complement Operator (~) Tilde Operator
+>>> ~12
+-13
+
+#if you say Complement (~)it will do a reverse result
+#if you say ~1 it will give you -> 0
+#if you say ~0 it will give you -> 1
+ 
+# 12 binary format              00001100
+#                              --------- reverse below
+# this is the complement of ~12 11110011, (now this is -13, 11110011)
+# this is using a Twos' Compliment method ~1 + 1
+#
+#complement of 13 is 00001101
+#                    11110010 - reverse, this is One's complement
+#                    +      1 - +1 making it Twos Complement
+#                    ------------
+#                    11110011 this is -13
+>>> ~45
+-46
+
+>>> ~13
+-14
+
+>>> ~11
+-12
+
+>>> ~10
+-11
+
+>>> ~-12
+11
+
+>>> ~-9
+8
+
+>>> ~22
+-23
+
+>>> ~-21
+20
+
+# Bitwise And (&)
+# Bitwise And (&)
+# Bitwise And (&)
+# Bitwise And (&)
+# Bitwise And (&)
+>>> 12 & 13
+12
+
+# binary format 12 00001100
+#               13 00001101
+#             --------------- AND operators
+#                  00001100 - this is 12, binary format
+
+>>> 25 & 30
+24
+
+#0 0 -> 0
+#0 1 -> 1  if both numbers are different
+#1 0 -> 1  you can go for 1
+#1 1 -> 0
+#                      The 'AND' operator
+# 25 - 11001           X  Y    XY
+# 30 - 11110           0  0 -> 0   
+#     --------         0  1 -> 0  if both numbers are different  
+#      11000 - 24      1  0 -> 0  you can go for 1
+#                      1  1 -> 1
+                                     # True  = 1
+# Bitwise Or (|)                     # False = 0
+>>> 12 | 13                            
+13
+
+# 12 -> 00001100
+# 13 -> 00001101 any 1 in the output is 1
+#     -------------
+#       00001101 -> 13                         The 'OR' operator
+#                                         #       X  Y    XY
+                                          #       0  0 -> 0
+>>> 22 | 56     # | Or bitwise operator   #       0  1 -> 1
+62                                        #       1  0 -> 1
+                                          #       1  1 -> 1
+# 22 ->  10110
+# 56 -> 111000
+#     ----------
+#       111110
+
+
+# Bitwise XOR (^)
+# XOR (^)
+#0 0 -> 0
+#0 1 -> 1  if both numbers are different
+#1 0 -> 1  you can go for 1
+#1 1 -> 0
+
+>>> 12 ^ 13      # 12 -> 00001100
+1                # 13 -> 00001101
+                 #       -----------
+                 #       00000001 -> 1
+
+>>> 25^30       # 25 -> 11001
+7               # 30 -> 11110
+                #     ------------
+                #       00111 -> 7
+
+# Bitwise Left Shift (<<)
+>>> 10 << 2     # 10 -> 1010 . (00)0                    # Left Shift you are 
+40              #  2 -> move 2 digits MORE to the left  # gaining bits
+                # 40 -> 101000                          #
+
+>>> 33 << 5     # 30 ->   100001.
+1056            #  5 ->   move 5 digits MORE to the left
+                # 1056 -> 10000100000.
+                
+# Bitwise Right Shift (>>)
+>>> 10 >> 2     # 10 -> 10(10) . 000                      # Right Shift you are 
+2               #  2 -> reduce 2 digits LESS to the left  # lossing bits
+                #  2 -> 10                                #
+
+# Import Math Functions in Python
+# Import Math Functions in Python
+# Import Math Functions in Python
+# Import Math Functions in Python
+# Import Math Functions in Python
+>>> x = sqrt(25)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sqrt' is not defined
+
+>>> import math
+>>> x = math.sqrt(25)
+>>> x
+5.0
+
+>>> x = math.sqrt(15)
+>>> x
+3.872983346207417
+
+>>> print(math.floor(2.9))
+2
+
+>>> print(math.ceil(2.2))
+3
+
+>>> 3 ** 2
+9
+
+>>> print(math.pow(3,2))    # Power Function
+9.0
+
+>>> print(math.pi)
+3.141592653589793
+
+>>> print(math.e)
+2.718281828459045
+
+>>> m.sqrt(25)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'm' is not defined
+
+>>> import math as m       # using alise
+>>> math.sqrt(25)
+5.0
+
+>>> m.sqrt(25)
+5.0
+
+# Python has been reset
+>>> math.sqrt(25)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'math' is not defined
+
+>>> from math import sqrt, pow
+>>> pow(4,5)
+1024.0
+
+>>> help('math')
+Help on built-in module math:
+
+NAME
+    math
+
+DESCRIPTION
+    This module provides access to the mathematical functions
+    defined by the C standard.
+
+FUNCTIONS
+    acos(x, /)
+        Return the arc cosine (measured in radians) of x.
+
+        The result is between 0 and pi.
+
+    acosh(x, /)
+        Return the inverse hyperbolic cosine of x.
+
+-- More  --
+
+# Guess the output?
+# 1. 7 << 2 
+# 2. 125 | 265
+# 3. 652 ^ 125
+# 4. (288 <<2) >> (26 // 6)
+
+#07/02/2021 18:06
+
+
+
+
+
+
+
+
