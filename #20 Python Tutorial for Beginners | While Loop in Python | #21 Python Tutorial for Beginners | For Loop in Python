@@ -1,0 +1,154 @@
+# 11/02/2021 04:11:00
+
+# #20 Python Tutorial for Beginners | While Loop in Python
+
+print("Telusko")
+print("Telusko")
+
+
+
+i = 1            # <- Initiaization
+
+while 1<=5:      # <- Condition
+    print("Telusko")
+    i=i+1        # <- Increment / Decrement
+#------
+Telusko
+Telusko
+Telusko
+Telusko
+Telusko
+
+
+
+i = 5            # <- Initiaization
+
+while 1>=1:      # <- Condition
+    print("Telusko")
+    i=i-1        # <- Increment / Decrement
+#------
+Telusko
+Telusko
+Telusko
+Telusko
+Telusko
+
+
+
+i = 5
+
+while i>=1:
+    print("Telusko ", i)
+    i = i-1
+#------
+Telusko  5
+Telusko  4
+Telusko  3
+Telusko  2
+Telusko  1
+
+
+
+i = 1
+j = 1
+
+while i<=5:
+    print("Telusko")
+    while j<=4:
+        print("Rocks")
+        j=j+1
+        
+    i =i+1
+#------
+Telusko
+Rocks
+Rocks
+Rocks
+Rocks
+Telusko
+Telusko
+Telusko
+Telusko
+
+    
+
+i = 1
+j = 1
+
+while i <= 5:
+    print("Telusko ",end="")
+    while j <= 4:
+        print("Rocks",end="")
+        j = j + 1
+
+    i = i + 1
+    print()
+#------
+#Telusko RocksRocksRocksRocks
+#Telusko 
+#Telusko 
+#Telusko 
+#Telusko 
+
+
+
+i = 1
+j = 1
+while i <= 5:
+    print("Telusko ", end="")
+    while j <= 4:
+        print("Rocks", end="")
+        j = j + 1
+
+    i = i + 1
+#------
+#Telusko RocksRocksRocksRocksTelusko Telusko Telusko Telusko
+
+
+i = 1
+j = 1
+while i <= 5:
+    print("Telusko ", end="")
+    while j <= 4:
+        print("Rocks", end="")
+        j = j + 1
+
+    i = i + 1
+    print()
+#------
+#Telusko RocksRocksRocksRocks
+#Telusko 
+#Telusko 
+#Telusko 
+#Telusko 
+
+
+# #21 Python Tutorial for Beginners | For Loop in Python
+
+x = ['navin', 65, 2.5]
+
+print(x)
+#------
+['navin', 65, 2.5]
+
+
+
+x = ['navin', 65,2.5]
+
+for i in x:
+    print(i)
+#------
+#navin
+#65
+#2.5
+
+
+
+
+
+
+
+
+
+
+
