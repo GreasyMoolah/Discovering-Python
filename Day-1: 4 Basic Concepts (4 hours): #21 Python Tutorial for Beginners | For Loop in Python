@@ -1,0 +1,508 @@
+# 13/02/2021 22:13:00
+
+# Day-1: 4 Basic Concepts (4 hours): #21 Python Tutorial for Beginners | For Loop in Python
+
+#21 Python Tutorial for Beginners | For Loop in Python
+#21 Python Tutorial for Beginners | For Loop in Python
+#21 Python Tutorial for Beginners | For Loop in Python
+#21 Python Tutorial for Beginners | For Loop in Python
+#21 Python Tutorial for Beginners | For Loop in Python
+
+x = ['navin',65,2.5]
+
+print(x)
+#------
+#['navin', 65, 2.5]
+
+
+
+x = ['navin',65,2.5]
+
+for i in x:
+    print(i)
+#------
+#navin
+#65
+#2.5
+
+
+
+x = 'NAVIN'
+
+for i in x:
+    print(i)
+#------
+#N
+#A
+#V
+#I
+#N
+
+
+
+for i in range[2,6,'Paul']:
+    print(i)
+#------
+2
+6
+Paul
+
+
+for i in range(10):
+    print(i)
+#------
+#0
+#1
+#2
+#3
+#4
+#5
+#6
+#7
+#8
+#9
+
+
+for i in range(11,21,1):
+    print(i)
+#------
+#11
+#12
+#13
+#14
+#15
+#16
+#17
+#18
+#19
+#20
+
+
+
+for i in range(20,10,-1):
+    print(i)
+#------
+#20
+#19
+#18
+#17
+#16
+#15
+#14
+#13
+#12
+#11
+
+
+for i in range(1,21):
+    print(i)
+#------
+#1
+#2
+#3
+#4
+#5
+#6
+#7
+#8
+#9
+#10
+#11
+#12
+#13
+#14
+#15
+#16
+#17
+#18
+#19
+#20
+
+
+
+for i in range(1,21):
+    if i%5!=0 :
+        print(i)
+#------
+#1
+#2
+#3
+#4
+#6
+#7
+#8
+#9
+#11
+#12
+#13
+#14
+#16
+#17
+#18
+#19
+
+
+
+#22 Python Tutorial for Beginners | Break Continue Pass in Python
+#22 Python Tutorial for Beginners | Break Continue Pass in Python
+#22 Python Tutorial for Beginners | Break Continue Pass in Python
+#22 Python Tutorial for Beginners | Break Continue Pass in Python
+#22 Python Tutorial for Beginners | Break Continue Pass in Python
+
+# BREAK CONTINUE PASS
+# BREAK CONTINUE PASS
+# BREAK CONTINUE PASS
+# BREAK CONTINUE PASS
+# BREAK CONTINUE PASS
+
+x = int(input("How many Candies you want?"))
+
+i = 1
+while i<= x:
+    print("Candy")
+    i+=1
+#------
+#How many Candies you want?4
+#Candy
+#Candy
+#Candy
+#Candy
+
+
+
+
+x = int(input("How many Candies you want?"))
+
+i = 1
+while i<= x:
+    print("Candy")
+    i+=1
+#------
+#How many Candies you want?8
+#Candy
+#Candy
+#Candy
+#Candy
+#Candy
+#Candy
+#Candy
+#Candy
+
+
+
+
+av = 5
+
+x = int(input("How many Candies you want?"))
+
+i = 1
+while i<= x:
+
+    if i>av:
+        print("Out of stock")
+        break
+
+
+    print("Candy")
+    i+=1
+
+
+print("Bye")
+#------
+#How many Candies you want?6
+#Candy
+#Candy
+#Candy
+#Candy
+#Candy
+#Bye
+
+
+
+
+av = 5
+
+x = int(input("How many Candies you want?"))
+
+i = 1
+while i<= x:
+
+    if i>av:
+        print("Out of stock")
+        break         # break
+
+
+    print("Candy")
+    i+=1
+
+
+print("Bye")
+#------
+#How many Candies you want?8
+#Candy
+#Candy
+#Candy
+#Candy
+#Candy
+#Out of stock
+#Bye
+
+
+for i in range(1,101):
+
+    if i%3==0:
+        continue
+
+    print(i)
+
+
+print("Bye")
+#------
+#1
+#2
+#4
+#5
+#7
+#8
+#10
+#11
+#13
+#14
+#16
+
+
+
+for i in range(1,101):
+
+    if i%3==0 or i%5==0:
+        continue          #continue
+
+    print(i)
+
+
+print("Bye")
+#------
+#1
+#2
+#4
+#7
+#8
+#11
+#13
+#14
+#16
+#17
+#19
+#22
+
+
+
+for i in range(1,101):
+
+    if i%2!=0:
+        pass
+
+    else:
+        print(i)
+#------
+#2
+#4
+#6
+#8
+#10
+#12
+#14
+#16
+#18
+#20
+#22
+
+
+#22.1 Python Tutorial for Beginners | Break vs Continue vs Pass in Python part 2
+#22.1 Python Tutorial for Beginners | Break vs Continue vs Pass in Python part 2
+#22.1 Python Tutorial for Beginners | Break vs Continue vs Pass in Python part 2
+#22.1 Python Tutorial for Beginners | Break vs Continue vs Pass in Python part 2
+#22.1 Python Tutorial for Beginners | Break vs Continue vs Pass in Python part 2
+
+for i in range(5):
+
+    if i==3:
+        continue
+    print("Hello", i)
+#------
+#Hello 0
+#Hello 1
+#Hello 2
+#Hello 4
+
+
+
+for i in range(5):
+
+    if i==3:
+        break
+    print("Hello", i)
+#------
+#Hello 0
+#Hello 1
+#Hello 2
+
+
+#23 Python Tutorial for Beginners | Printing Patterns in Python
+#23 Python Tutorial for Beginners | Printing Patterns in Python
+#23 Python Tutorial for Beginners | Printing Patterns in Python
+#23 Python Tutorial for Beginners | Printing Patterns in Python
+#23 Python Tutorial for Beginners | Printing Patterns in Python
+
+
+print("# ",end="")
+print("# ",end="")
+print("# ",end="")
+print("# ",end="")
+#------
+# # # #
+
+
+
+for j in range(4):
+    print("# ",end="")
+    
+print()
+
+for j in range(4):
+    print("# ",end="")
+#------
+# # # # # # # # 
+
+
+for i in range(4):
+    for j in range(4):
+        print("# ", end="")
+
+    print()
+#------
+# # # # 
+# # # # 
+# # # # 
+# # # # 
+
+
+for i in range(4):
+    for j in range(i):
+        print("# ", end="")
+
+    print()
+#------
+# 
+# # 
+# # #
+
+
+
+for i in range(4):
+    for j in range(i+1):
+        print("# ", end="")
+
+    print()
+#------
+# 
+# # 
+# # # 
+# # # #
+
+
+for i in range(4):
+    for j in range(4-i):
+        print("# ", end="")
+
+    print()
+#------
+# # # # 
+# # # 
+# # 
+# 
+
+
+
+#24 Python Tutorial for Beginners | For Else in Python
+#24 Python Tutorial for Beginners | For Else in Python
+#24 Python Tutorial for Beginners | For Else in Python
+#24 Python Tutorial for Beginners | For Else in Python
+#24 Python Tutorial for Beginners | For Else in Python
+
+
+nums = [12,16,18,20,25]
+
+for num in nums:
+
+    if num % 5 ==0:
+        print(num)
+#------
+#20
+#25
+
+
+nums = [12,16,18,20,25]
+
+for num in nums:
+
+    if num % 5 ==0:
+        print(num)
+        break
+#------
+#20
+
+nums = [10,16,18,20,25]
+
+for num in nums:
+
+    if num % 5 ==0:
+        print(num)
+        break
+#------
+#10
+
+
+nums = [12,16,18,21,26]
+
+for num in nums:
+
+    if num % 5 ==0:
+        print(num)
+        break
+    else:
+        print("not found")
+#------
+#not found
+#not found
+#not found
+#not found
+#not found
+
+
+nums = [12,16,18,21,26]
+
+for num in nums:
+
+    if num % 5 ==0:
+        print(num)
+        break
+else:
+        print("not found")
+#------
+#not found
+
+
+nums = [10,16,18,21,26]
+
+for num in nums:
+
+    if num % 5 ==0:
+        print(num)
+        break       #break is cumpolsary, 'not found' will print without it
+
+else:
+        print("not found")
+#------
+#10
+
