@@ -1,0 +1,644 @@
+# 13/02/2021 22:13:00
+
+# Day -2: 4 Basic Concepts (5hours): #25 Python Tutorial for Beginners | Prime Number in Python
+
+#25 Python Tutorial for Beginners | Prime Number in Python
+#25 Python Tutorial for Beginners | Prime Number in Python
+#25 Python Tutorial for Beginners | Prime Number in Python
+#25 Python Tutorial for Beginners | Prime Number in Python
+#25 Python Tutorial for Beginners | Prime Number in Python
+
+
+num = 7
+
+for i in range(2, num):
+    if num % i == 0:
+        print("Not prime")
+    else:
+        print("Prime")
+#------
+#Prime
+#Prime
+#Prime
+#Prime
+#Prime
+
+
+num = 7
+
+for i in range(2, num):
+    if num % i == 0:
+        print("Not prime")
+        break
+else:
+    print("Prime")
+#------
+#Prime
+
+
+
+num = 10
+
+for i in range(2, num):
+    if num % i == 0:
+        print("Not prime")
+        break
+
+else:
+    print("Prime")    # Check in google How to find a prime number in a 
+#------               # efficient wat.
+Not prime
+
+
+#26 Python Tutorial for Beginners | Array in Python
+#26 Python Tutorial for Beginners | Array in Python
+#26 Python Tutorial for Beginners | Array in Python
+#26 Python Tutorial for Beginners | Array in Python
+#26 Python Tutorial for Beginners | Array in Python
+
+from array import *
+
+vals = array('i',[5,9,8,4,2,])
+
+print(vals)
+#------
+array('i', [5, 9, 8, 4, 2])
+
+
+from array import *
+
+vals = array('i',[5,9,8.5,4,2,])
+
+print(vals)
+#------
+#Traceback (most recent call last):
+#  File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 39, in <module>
+#    vals = array('i',[5,9,8.5,4,2,])
+#TypeError: integer argument expected, got float
+
+
+from array import *
+
+vals = array('I',[5,9,-8,4,2])
+
+print(vals)
+#------
+#Traceback (most recent call last):
+#  File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 39, in <module>
+#    vals = array('I',[5,9,-8,4,2])
+#OverflowError: can't convert negative value to unsigned int
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+print(vals.buffer_info())
+#------
+#(2513532717104, 5)
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4])
+
+print(vals.buffer_info())
+#------
+(3006719492544, 4)
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+print(vals.typecode)
+#------
+#i
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+vals.reverse()
+print(vals)
+#------
+array('i', [2, 4, -8, 9, 5])
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+vals.reverse()
+
+
+
+print(vals[0])
+#------
+#2
+
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+
+print(vals[0])
+#------
+#5
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+
+print(vals[1])
+#------
+#9
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+
+for i in range(5):
+    print(vals[i])
+#------
+#5
+#9
+#-8
+#4
+#2
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+
+for i in range(len(vals)):
+    print(vals[i])
+#------
+#5
+#9
+#-8
+#4
+#2
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+
+for e in vals:
+    print(e)
+#------
+#5
+#9
+#-8
+#4
+#2
+
+
+from array import *
+
+vals = array('u',['a','e','i'])
+
+
+for e in vals:
+    print(e)
+#------
+#a
+#e
+#i
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+newArr = array(vals.typecode, (a for a in vals))
+
+for e in newArr:
+    print(e)
+#------
+#5
+#9
+#-8
+#4
+#2
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+newArr = array(vals.typecode, (a*a for a in vals))
+
+for e in newArr:
+    print(e)
+#------
+#25
+#81
+#64
+#16
+#4
+
+
+
+from array import *
+
+vals = array('i',[5,9,-8,4,2])
+
+newArr = array(vals.typecode, (a*a for a in vals))
+
+i = 0
+
+while i<len(newArr):
+    print(newArr[i])
+    i+=1
+#------
+#25
+#81
+#64
+#16
+#4
+
+
+#27 Python Tutorial for Beginners | Array values from User in Python | Search in Array
+#27 Python Tutorial for Beginners | Array values from User in Python | Search in Array
+#27 Python Tutorial for Beginners | Array values from User in Python | Search in Array
+#27 Python Tutorial for Beginners | Array values from User in Python | Search in Array
+#27 Python Tutorial for Beginners | Array values from User in Python | Search in Array
+
+
+from array import *
+
+arr = array('i',[])
+
+n = int(input("Enter the length of the array: "))
+
+for i in range(5):
+    x = int(input("Enter the next value: "))
+    arr.append(x)
+
+
+print(arr)
+#------
+#Enter the length of the array: 4
+#Enter the next value: 16
+#Enter the next value: 20
+#Enter the next value: 48
+#Enter the next value: 21
+#Enter the next value: 10
+#array('i', [16, 20, 48, 21, 10])
+
+
+
+from array import *
+
+arr = array('i',[])
+
+n = int(input("Enter the length of the array: "))
+
+for i in range(n):
+    x = int(input("Enter the next value: "))
+    arr.append(x)
+
+
+print(arr)
+#------
+#Enter the length of the array: 4
+#Enter the next value: 16
+#Enter the next value: 20
+#Enter the next value: 14
+#Enter the next value: 52
+#array('i', [16, 20, 14, 52])
+
+
+
+
+from array import *
+
+arr = array('i',[])
+
+n = int(input("Enter the length of the array: "))
+
+for i in range(n):
+    x = int(input("Enter the next value: "))
+    arr.append(x)
+
+
+print(arr)
+
+val = int(input("Enter the value for search: "))
+
+k = 0
+for e in arr:
+    if e == val:
+        print(k)
+        break
+        
+    k+=1
+#------
+#Enter the length of the array: 4
+#Enter the next value: 14
+#Enter the next value: 52
+#Enter the next value: 98
+#Enter the next value: 36
+#array('i', [14, 52, 98, 36])
+#Enter the value for search: 52
+#1
+
+
+
+from array import *
+
+arr = array('i',[])
+
+n = int(input("Enter the length of the array: "))
+
+for i in range(n):
+    x = int(input("Enter the next value: "))
+    arr.append(x)
+
+
+print(arr)
+
+val = int(input("Enter the value for search: "))
+
+k = 0
+for e in arr:
+    if e == val:
+        print(k)
+        break
+
+    k+=1
+
+print(arr.index(val))
+#------
+#Enter the length of the array: 5
+#Enter the next value: 121
+#Enter the next value: 548
+#Enter the next value: 693
+#Enter the next value: 587
+#Enter the next value: 145
+#array('i', [121, 548, 693, 587, 145])
+#Enter the value for search: 587
+#3
+#3
+
+
+#28 Python Tutorial for Beginners | Why Numpy? Installing Numpy in Pycharm
+#28 Python Tutorial for Beginners | Why Numpy? Installing Numpy in Pycharm
+#28 Python Tutorial for Beginners | Why Numpy? Installing Numpy in Pycharm
+#28 Python Tutorial for Beginners | Why Numpy? Installing Numpy in Pycharm
+#28 Python Tutorial for Beginners | Why Numpy? Installing Numpy in Pycharm
+
+# 2 Types of ARRAY:
+# 1. Single Dimensional Array
+# 2. Multi-Dimensional Array
+
+
+from array import *
+
+arr = array('i',[1,2,3],[2,5,4])
+
+print(arr)
+#------
+#Traceback (most recent call last):
+#  File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 94, in <module>
+#    arr = array('i',[1,2,3],[2,5,4])
+#TypeError: array() takes at most 2 arguments (3 given)
+
+
+from numpy import *
+
+arr = array('i',[1,2,3],[2,5,4])
+
+print(arr)
+#------
+#Traceback (most recent call last):
+#  File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 92, in <module>
+#    from numpy import *
+#ModuleNotFoundError: No module named 'numpy'
+
+
+from numpy import *
+
+arr = array([1,2,3,2,5,4])
+
+print(arr)
+#------
+#[1,2,3,2,5,4]
+
+
+
+
+from numpy import *
+
+arr = array([1,2,3,2,5,4],int)
+
+print(arr)
+#------
+#[1,2,3,2,5,4]
+
+
+#29 Python Tutorial for Beginners | Ways of Creating Arrays in Numpy
+#29 Python Tutorial for Beginners | Ways of Creating Arrays in Numpy
+#29 Python Tutorial for Beginners | Ways of Creating Arrays in Numpy
+#29 Python Tutorial for Beginners | Ways of Creating Arrays in Numpy
+#29 Python Tutorial for Beginners | Ways of Creating Arrays in Numpy
+
+# 6 ways to create an Array :
+
+# array()
+# linespace()
+# logspace()
+# arange()
+# zeros()
+# ones()
+
+
+
+from numpy import *
+
+arr = array([1,2,3,4,5])
+
+print(arr)
+#------
+#[1,2,3,4,5]
+
+
+
+from numpy import *
+
+arr = array([1,2,3,4,5])
+
+print(arr.dtype)
+#------
+#int32
+
+
+
+from numpy import *
+
+arr = array([1,2,3,4,5.0])
+
+print(arr.dtype)
+#------
+#float64
+
+
+
+from numpy import *
+
+arr = array([1,2,3,4,5.0])
+
+print(arr.dtype)
+print(arr)
+#------
+#float64
+#[1. 2. 3. 4. 5.]
+
+
+
+from numpy import *
+
+arr = array([1,2,3,4,5.0],int)
+
+print(arr.dtype)
+print(arr)
+#------
+#int32
+#[1 2 3 4 5]
+
+
+
+from numpy import *
+
+arr = array([1,2,3,4,5.0],float)
+
+print(arr.dtype)
+print(arr)
+#------
+#float64
+#[1. 2. 3. 4. 5.]
+
+
+from numpy import *
+
+arr = linspace(0,15,16)
+
+
+print(arr)
+#------
+#[1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15.]
+
+
+
+from numpy import *
+
+arr = linspace(0,15,20)
+
+
+print(arr)
+#------
+
+
+
+
+from numpy import *
+
+arr = linspace(0,15)
+
+
+print(arr)
+#------
+
+
+
+from numpy import *
+
+arr = arange(1,15,2)
+
+
+print(arr)
+#------
+#[1  3  5  7  9  11  13]
+
+
+from numpy import *
+
+arr = logspace(1,40,5)
+
+
+print(arr)
+#------
+
+
+
+from numpy import *
+
+arr = logspace(1,40,5)
+
+
+print('%.2f %arr[0]')
+#------
+#10
+
+
+
+from numpy import *
+
+arr = logspace(1,40,5)
+
+
+print('%.2f %arr[4]')
+#------
+#
+
+
+
+from numpy import *
+
+arr = zeros(5)
+
+
+print(arr)
+#------
+#[0. 0. 0. 0. 0.]
+
+
+from numpy import *
+
+arr = ones(5)
+
+
+print(arr)
+#------
+#[1. 1. 1. 1. 1.]
+
+
+from numpy import *
+
+arr = ones(5,int)
+
+
+print(arr)
+#------
+#[1 1 1 1 1]
+
