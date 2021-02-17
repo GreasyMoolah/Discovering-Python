@@ -1,0 +1,637 @@
+# 16/02/2021 04:13:00
+
+# Day -2: 4 Basic Concepts (5hours): #30 Python Tutorial for Beginners | Copying an Array in Python
+
+#30 Python Tutorial for Beginners | Copying an Array in Python
+#30 Python Tutorial for Beginners | Copying an Array in Python
+#30 Python Tutorial for Beginners | Copying an Array in Python
+#30 Python Tutorial for Beginners | Copying an Array in Python
+#30 Python Tutorial for Beginners | Copying an Array in Python
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+
+
+arr = arr + 5
+
+print(arr)
+#------
+#[6 7 8 9 10]
+
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+arr2 = array([6,1,9,3,2])  # Vectorized Operation
+
+arr3 = arr1 + arr2
+
+print(arr3)
+#------
+#[7 3 12 7 7]
+
+
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+
+
+print(sin(arr1))
+#------
+#[ 0.84147098   0.90929743  0.14112001 -0.7568025 -0.95892427]
+
+
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+
+
+print(cos(arr1))
+#------
+#[ 0.54030231 -0.41614684  -0.9899925 -0.65364362 -0.28366219]
+
+
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+
+
+print(log(arr1))
+#------
+#[ 0.              0.69314718  1.09861229 1.38629436 1.60943791]
+
+
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+
+
+print(sqrt(arr1))
+#------
+#[ 1.            1.41421356 1.73205081 2.         2.23606798]
+
+
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+
+
+print(sum(arr1))
+#------
+#15
+
+
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+
+
+print(min(arr1))
+#------
+#1
+
+
+
+from numpy import
+
+arr1 = array([1,2,3,4,5])
+
+
+print(max(arr1))
+#------
+#5
+
+
+
+from numpy import *
+
+arr1 = array([1,2,3,4,5])
+arr2 = array([6,1,9,3,2])
+
+
+
+print(concatenate([arr1,arr2]))
+#------
+#[1 2 3 4 5 6 1 9 3 2]
+
+
+
+from numpy import *
+
+arr1 = array([2,6,8,1,3])
+
+arr2 = arr1
+
+print(arr1)
+print(arr2)
+#------
+#[1 2 3 4 5 6 1 9 3 2]
+
+
+
+
+from numpy import
+
+arr1 = array([2,6,8,1,3])
+
+arr2 = arr1
+
+print(arr1)
+print(arr2)
+#------
+#[2 6 8 1 3]
+#[2 6 8 1 3]
+
+
+
+from numpy import *
+
+arr1 = array([2,6,8,1,3])
+
+arr2 = arr1
+
+print(arr1)
+print(arr2)
+
+print(id(arr1))
+print(id(arr2))
+#------
+#[2 6 8 1 3]
+#[2 6 8 1 3]
+#120638624
+#120638624        #Aliasing
+
+
+
+from numpy import *
+
+arr1 = array([2,6,8,1,3])
+
+arr2 = arr1.view()     # .view() is a Function
+
+print(arr1)
+print(arr2)
+
+print(id(arr1))
+print(id(arr2))
+#------
+#[2 6 8 1 3]
+#[2 6 8 1 3]          #Shallow Copy
+#124308400            #Deep Copy
+#581678776
+
+
+
+from numpy import *
+
+arr1 = array([2,6,8,1,3])
+
+arr2 = arr1.view()
+
+arr1[1] = 7
+
+print(arr1)
+print(arr2)
+
+print(id(arr1))
+print(id(arr2))
+#------
+#[2 7 8 1 3]
+#[2 7 8 1 3]          #Shallow Copy
+#129088752            #Deep Copy
+#129088712
+
+
+# 16/02/2021 04:40:00
+
+retake:
+# 17/02/2021 01:19:00
+
+
+from numpy import *
+
+arr1 = array([2,6,8,1,3])
+
+arr2 = arr1.copy()
+
+arr1[1] = 7
+
+print(arr1)
+print(arr2)
+
+print(id(arr1))
+print(id(arr2))
+#------
+#[2 7 8 1 3]
+#[2 6 8 1 3]
+#117784112
+#117488960
+
+
+#31 Python Tutorial for Beginners | Working with Matrix in Python
+#31 Python Tutorial for Beginners | Working with Matrix in Python
+#31 Python Tutorial for Beginners | Working with Matrix in Python
+#31 Python Tutorial for Beginners | Working with Matrix in Python
+#31 Python Tutorial for Beginners | Working with Matrix in Python
+
+
+from numpy import *
+
+arr1 = arr([
+             [1,2,3],
+             [4,5,6]
+          ])
+
+
+print(arr1.dtype)
+#------
+#int32
+          
+
+from numpy import *
+
+arr1 = arr([
+             [1,2,3],
+             [4,5,6]
+          ])
+
+
+print(arr1.ndim)
+#------
+#2
+
+          
+from numpy import *
+
+arr1 = arr([
+             [1,2,3],
+             [4,5,6]
+          ])
+
+
+print(arr1.shape)
+#------
+#(2, 3)
+          
+          
+          
+from numpy import *
+
+arr1 = arr([
+             [1,2,3],
+             [4,5,6]
+          ])
+
+
+print(arr1.shape)
+#------
+#(2, 3)   
+
+
+
+from numpy import *
+
+arr1 = arr([
+             [1,2,3],
+             [4,5,6]
+          ])
+
+
+print(arr1.size)
+#------
+#6
+
+
+from numpy import *
+
+arr1 = arr([
+             [1,2,3,6,2,9],
+             [4,5,6,7,5,3]
+          ])
+
+arr2 = arr1.flatten()
+
+arr3 = arr2.reshape(2,2,3)
+
+
+print(arr3)
+#------
+#[[[1 2 3]
+#  [6 2 9]]
+#
+# [[4 5 6]
+#  [7 5 3]]]  
+
+
+
+from numpy import *
+
+arr1 = arr([
+             [1,2,3,6,2,9],
+             [4,5,6,7,5,3]
+          ])
+
+arr2 = arr1.flatten()
+
+arr3 = arr2.reshape(2,2,3)
+
+
+print(arr3)
+#------
+#[[[1 2 3]
+#  [6 2 9]]
+#
+# [[4 5 6]
+#  [7 5 3]]]     
+
+
+
+from numpy import *
+
+
+
+m = matrix('1 2: 3 6 : 4 5: 6 7')
+
+
+print(m)
+#------
+#[[1 2]
+# [3 6]
+# [4 5]
+# [6 7]]
+
+
+
+from numpy import *
+
+
+
+m = matrix('1 2 3: 6 4 5: 1 6 7')
+
+
+print(m)
+#------
+#[[1 2 3]
+# [6 4 5]
+# [1 6 7]
+
+
+
+from numpy import *
+
+
+
+m = matrix('1 2 3: 6 4 5: 1 6 7')
+
+
+print(diagonal(m))
+#------
+#[1 4 7]
+
+
+
+from numpy import *
+
+
+
+m = matrix('1 2 3: 6 4 5: 1 6 7')
+
+
+print(m.min())
+#------
+#1
+
+
+from numpy import *
+
+
+m1 = matrix('1 2 3: 6 4 5: 1 6 7')
+m2 = matrix('1 2 3: 6 8 5: 2 6 7')
+
+m3 = m1 + m2;
+
+print(m3)
+#------
+#[[ 2   4   6]
+# [12  12  10]
+# [ 3  12  14]
+
+
+
+from numpy import *
+
+
+m1 = matrix('1 2 3: 6 4 5: 1 6 7')
+m2 = matrix('1 2 3: 6 8 5: 2 6 7')
+
+m3 = m1 * m2;
+
+print(m3)
+#------
+#[[19  36  34]
+# [40  74  73]
+# [51  92  82]]
+
+
+#32 Python Tutorial for Beginners | Functions in Python
+#32 Python Tutorial for Beginners | Functions in Python
+#32 Python Tutorial for Beginners | Functions in Python
+#32 Python Tutorial for Beginners | Functions in Python
+#32 Python Tutorial for Beginners | Functions in Python
+
+
+def greet():
+    print("Hello")
+    print("Good morning")
+
+greet()
+#------
+#Hello
+#Good morning
+
+
+
+def greet():
+    print("Hello")
+    print("Good morning")
+
+greet()
+
+greet()
+#------
+#Hello
+#Good morning
+#Hello
+#Good morning
+
+
+def greet():
+    print("Hello")
+    print("Good morning")
+
+def add(x,y):
+    c = x+y
+    print(c)
+
+greet()
+add(5,4)
+#------
+9
+
+
+def greet():
+    print("Hello")
+    print("Good morning")
+
+def add(x,y):
+    c = x+y
+    return c
+
+greet()
+result = add(5,4)
+print(result)
+#------
+#Hello
+#Good morning
+#9
+
+
+def add_sub(x,y):
+    c = x+y
+    d = x-y
+    return c,d
+
+result1,result2 = add_sub(5,4)
+print(result1,result2)
+#------
+#9 1
+
+
+
+#33 Python Tutorial for Beginners | Function Arguments in Python
+#33 Python Tutorial for Beginners | Function Arguments in Python
+#33 Python Tutorial for Beginners | Function Arguments in Python
+#33 Python Tutorial for Beginners | Function Arguments in Python
+#33 Python Tutorial for Beginners | Function Arguments in Python
+
+
+def update(x):
+    x = 8
+    print(x)
+
+update(10)
+#------
+8
+
+
+def update(x):
+    x = 8
+    print(x)
+
+
+a = 10
+update(10)
+#------
+8
+
+
+def update(x):
+    x = 8
+    print(x)
+
+
+a = 10
+update(10)
+print(a)
+#------
+#8
+#10
+
+
+
+def update(x):
+    x = 8
+    print("x ", x)
+
+
+a = 10
+update(10)
+print("a ", a)
+#------
+#x 8
+#a 10
+
+
+
+def update(x):
+
+    print(id(x))
+    x = 8
+    print("x ", x)
+
+
+a = 10
+print(id(a))
+update(10)
+print("a ", a)
+#------
+#2824257366608
+#2824257366608
+#x  8
+#a  10
+
+
+
+def update(x):
+
+    print(id(x))
+    x = 8
+    print(id(x))
+    print("x ", x)
+
+
+a = 10
+print(id(a))
+update(10)
+print("a ", a)
+#------
+#2287752473168
+#2287752473168
+#2287752473104
+#x  8
+#a  10
+
+
+
+
+def update(lst):
+
+    print(id(lst))
+
+    lst[1] = 25
+    print(id(lst))
+    print("x ", lst)
+
+
+lst = [10,20,30]
+print(id(lst))
+update(lst)
+print("lst ", lst)
+#------
+#2685991727168
+#2685991727168
+#2685991727168
+#x  [10, 25, 30]
+#lst  [10, 25, 30]
+
+
+
+
+
