@@ -1,0 +1,104 @@
+# 21/02/2021 10:42:00
+# 21/02/2021 11:09:00
+
+# Day -2: 4 Basic Concepts (5hours): #34 Python Tutorial for Beginners | Types of Arguments in Python
+# Day -2: 4 Basic Concepts (5hours): #34 Python Tutorial for Beginners | Types of Arguments in Python
+# Day -2: 4 Basic Concepts (5hours): #34 Python Tutorial for Beginners | Types of Arguments in Python
+# Day -2: 4 Basic Concepts (5hours): #34 Python Tutorial for Beginners | Types of Arguments in Python
+# Day -2: 4 Basic Concepts (5hours): #34 Python Tutorial for Beginners | Types of Arguments in Python
+
+def add(a,b):       # Formal Arguments
+    c = a+b
+    print(c)                      # the other is Actual Argument
+                                      #Position
+                                      #Keyword
+add(5,6)                              #Default
+                                      #Variable Length
+
+
+def person(name,age):
+    print(name)
+    print(age)
+
+
+person('navin',28)
+#------
+#navin
+#28
+
+
+
+def person(name,age):
+    print(name)
+    print(age)
+
+
+person(age=28,name='navin') #Keyword Arguments
+#------
+#navin
+#18
+
+
+
+def person(name,age = 18):
+    print(name)
+    print(age)
+
+
+person('navin',28) #Default
+#------
+#navin
+#18
+
+
+def person(name,age = 18):
+    print(name)
+    print(age)
+
+
+person('navin',28) #Default
+#------
+#navin
+#28
+
+
+def sum(a,b):
+    c= a+b
+    print(c)
+
+
+person(5,6)
+#------
+#11
+
+
+
+def sum(a, *b):
+    
+    c = a
+    
+    for i in b:
+        c = c + i
+    print(c)
+
+
+person(5,6,34,78)
+#------
+#123
+
+
+
+def sum(*b):
+    
+    c = 0
+    
+    for i in b:
+        c = c + i
+    print(c)
+
+
+person(5,6,34,78)
+#------
+#123
+
+# 21/02/2021 11:09:00
