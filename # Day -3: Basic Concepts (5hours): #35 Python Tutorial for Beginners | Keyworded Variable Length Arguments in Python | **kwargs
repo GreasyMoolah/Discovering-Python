@@ -1,0 +1,46 @@
+# 23/02/2021 06:58:00
+
+# Day -3: Basic Concepts (5hours): #35 Python Tutorial for Beginners | Keyworded Variable Length Arguments in Python | **kwargs
+# Day -3: Basic Concepts (5hours): #35 Python Tutorial for Beginners | Keyworded Variable Length Arguments in Python | **kwargs
+# Day -3: Basic Concepts (5hours): #35 Python Tutorial for Beginners | Keyworded Variable Length Arguments in Python | **kwargs
+# Day -3: Basic Concepts (5hours): #35 Python Tutorial for Beginners | Keyworded Variable Length Arguments in Python | **kwargs
+# Day -3: Basic Concepts (5hours): #35 Python Tutorial for Beginners | Keyworded Variable Length Arguments in Python | **kwargs
+
+def person(name, *data):
+
+    print(name)
+    print(data)
+
+
+person('navin',28,'Mumbai'9865432)
+#------
+#navin
+#(28, 'Mumbai', 9865432)
+
+
+
+def person(name, **data):
+
+    print(name)
+    print(data)
+    
+    
+person('navin',age=28,city='Mumbai',mob=9865432)
+#------
+#navin
+#{'age': 28, 'city': 'Mumbai', 'mob': 9865432}
+
+
+
+def person(name, **data):
+
+    print(name)
+
+    for i, j in data.items():
+        print(i,j)
+
+
+person('navin',age=28,city='Mumbai',mob=9865432)
+
+
+
