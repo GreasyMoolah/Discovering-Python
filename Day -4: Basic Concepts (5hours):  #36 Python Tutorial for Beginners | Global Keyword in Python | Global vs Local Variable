@@ -1,0 +1,869 @@
+# 25/02/2021 17:40:00
+# 25/02/2021 21:18:00
+
+# Day -4: Basic Concepts (5hours): #36 Python Tutorial for Beginners | Global Keyword in Python | Global vs Local Variable
+# Day -4: Basic Concepts (5hours): #36 Python Tutorial for Beginners | Global Keyword in Python | Global vs Local Variable
+# Day -4: Basic Concepts (5hours): #36 Python Tutorial for Beginners | Global Keyword in Python | Global vs Local Variable
+# Day -4: Basic Concepts (5hours): #36 Python Tutorial for Beginners | Global Keyword in Python | Global vs Local Variable
+# Day -4: Basic Concepts (5hours): #36 Python Tutorial for Beginners | Global Keyword in Python | Global vs Local Variable
+# Day -4: Basic Concepts (5hours): #36 Python Tutorial for Beginners | Global Keyword in Python | Global vs Local Variable
+
+a = 10
+
+def something():
+
+
+
+
+print(a)
+#------
+#10
+
+
+a = 10
+
+def something():
+    a = 15
+
+    print("in fun" ,a)
+
+something()
+
+
+print("outside" ,a)
+#------
+#in fun 15
+#outside 10f
+
+
+
+a = 10
+
+def something():
+
+
+    print("in fun" ,a)
+
+something()
+
+
+print("outside" ,a)
+#------
+#in fun 10
+#outside 10
+
+
+
+a = 10
+
+def something():
+
+    a = 15
+    print("in fun" ,a)
+
+something()
+
+
+print("outside" ,a)
+#------
+#in fun 15
+#outside 10
+
+
+a = 10
+
+def something():
+    global a
+    a = 15
+    print("in fun" ,a)
+
+something()
+
+
+print("outside" ,a)
+#------
+#in fun 15
+#outside 15
+
+
+
+a = 10
+print(id(a))
+
+def something():
+    a = 9
+
+    x = globals()['a']
+    print(id(x))
+    print("in fun" ,a)
+
+
+
+something()
+
+
+print("outside" ,a)
+#------
+#2853029374544
+#2853029374544
+#in fun 9
+#outside 10
+
+
+
+a = 10
+print(id(a))
+
+def something():
+    a = 9
+
+    x = globals()['a']
+    print(id(x))
+    print("in fun" ,a)
+
+    globals()['a'] = 15
+
+
+something()
+
+
+print("outside" ,a)
+#-----
+#2515514780240
+#2515514780240
+#in fun 9
+#outside 15
+
+
+#37 Python Tutorial for Beginners | Pass List to a Function in Python
+#37 Python Tutorial for Beginners | Pass List to a Function in Python
+#37 Python Tutorial for Beginners | Pass List to a Function in Python
+#37 Python Tutorial for Beginners | Pass List to a Function in Python
+#37 Python Tutorial for Beginners | Pass List to a Function in Python
+#37 Python Tutorial for Beginners | Pass List to a Function in Python
+
+def count(lst):
+
+    even = 0
+    odd = 0
+
+    for i in lst:
+        if i%2==0:
+            even+=1
+        else:
+            odd+=1
+
+    return even,odd
+
+lst = [20,25,14,19,16,24,28,47,26]
+
+even, odd = count(lst)
+
+print(even)
+print(odd)
+#------
+#6
+#3
+
+
+
+def count(lst):
+
+    even = 0
+    odd = 0
+
+    for i in lst:
+        if i%2==0:
+            even+=1
+        else:
+            odd+=1
+
+    return even,odd
+
+lst = [20,25,14,19,16,24,28,47,26]
+
+even, odd = count(lst)
+
+print("Even : {} and Odd : {}".format(even,odd))
+#------
+#Even : 6 and Odd : 3
+
+
+#38 Python Tutorial for Beginners | Fibonacci Sequence
+#38 Python Tutorial for Beginners | Fibonacci Sequence
+#38 Python Tutorial for Beginners | Fibonacci Sequence
+#38 Python Tutorial for Beginners | Fibonacci Sequence
+#38 Python Tutorial for Beginners | Fibonacci Sequence
+#38 Python Tutorial for Beginners | Fibonacci Sequence
+
+
+def fib(n):
+    print(0)
+    print(1)
+
+
+fib(5)
+#------
+#0
+#1
+
+
+
+def fib(n):
+
+    a = 0
+    b = 1
+
+    print(a)
+    print(b)
+
+    for i in range(2,n):
+        print(a+b)
+
+
+fib(5)
+#------
+#
+#0
+#1
+#1
+#1
+#1
+
+
+
+def fib(n):
+
+    a = 0
+    b = 1
+
+    print(a)
+    print(b)
+
+    for i in range(2,n):
+
+        c = a + b
+        a = b
+        b = c
+
+        print(c)
+
+
+fib(5)
+#------
+#0
+#1
+#1
+#2
+#3
+
+
+def fib(n):
+
+    a = 0
+    b = 1
+
+    print(a)
+    print(b)
+
+    for i in range(2,n):
+        c = a + b
+        a = b
+        b = c
+        print(c)
+
+fib(1)
+#------
+#0
+#1
+
+
+def fib(n):
+
+    a = 0
+    b = 1
+
+    if n == 1:
+        print(a)
+
+    else:
+        print(a)
+        print(b)
+
+        for i in range(2,n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
+
+fib(10)
+#------
+#0
+#1
+#1
+#2
+#3
+#5
+#8
+#13
+#21
+#34
+
+
+
+def fib(n):
+
+    a = 0
+    b = 1
+
+    if n == 1:
+        print(a)
+
+    else:
+        print(a)
+        print(b)
+
+        for i in range(2,n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
+
+fib(-3)
+#------
+#0
+#1
+
+
+def fib(n):
+
+    a = 0
+    b = 1
+
+    if n == 1:
+        print(a)
+
+    else:
+        print(a)
+        print(b)
+
+        for i in range(2,n):
+            c = a + b
+            a = b
+            b = c
+            print(c)
+
+fib(100)
+#------
+0
+# 1
+# 1
+# 2
+# 3
+# 5
+# 8
+# 13
+# 21
+# 34
+# 55
+# 89
+# 144
+# 233
+# 377
+# 610
+# 987
+# 1597
+# 2584
+# 4181
+# 6765
+# 10946
+# 17711
+# 28657
+# 46368
+# 75025
+# 121393
+# 196418
+# 317811
+# 514229
+# 832040
+# 1346269
+# 2178309
+# 3524578
+# 5702887
+# 9227465
+# 14930352
+# 24157817
+# 39088169
+# 63245986
+# 102334155
+# 165580141
+# 267914296
+# 433494437
+# 701408733
+# 1134903170
+# 1836311903
+# 2971215073
+# 4807526976
+# 7778742049
+# 12586269025
+# 20365011074
+# 32951280099
+# 53316291173
+# 86267571272
+# 139583862445
+# 225851433717
+# 365435296162
+# 591286729879
+# 956722026041
+# 1548008755920
+# 2504730781961
+# 4052739537881
+# 6557470319842
+# 10610209857723
+# 17167680177565
+# 27777890035288
+# 44945570212853
+# 72723460248141
+# 117669030460994
+# 190392490709135
+# 308061521170129
+# 498454011879264
+# 806515533049393
+# 1304969544928657
+# 2111485077978050
+# 3416454622906707
+# 5527939700884757
+# 8944394323791464
+# 14472334024676221
+# 23416728348467685
+# 37889062373143906
+# 61305790721611591
+# 99194853094755497
+# 160500643816367088
+# 259695496911122585
+# 420196140727489673
+# 679891637638612258
+# 1100087778366101931
+# 1779979416004714189
+# 2880067194370816120
+# 4660046610375530309
+# 7540113804746346429
+# 12200160415121876738
+# 19740274219868223167
+# 31940434634990099905
+# 51680708854858323072
+# 83621143489848422977
+# 135301852344706746049
+# 218922995834555169026
+
+
+#39 Python Tutorial for Beginners | Factorial
+#39 Python Tutorial for Beginners | Factorial
+#39 Python Tutorial for Beginners | Factorial
+#39 Python Tutorial for Beginners | Factorial
+#39 Python Tutorial for Beginners | Factorial
+#39 Python Tutorial for Beginners | Factorial
+
+
+def fact(n):
+
+    f = 1
+
+    for i in range(1,n+1):
+        f = f*i
+
+    return f
+
+x = 4
+
+result = fact(x)
+
+
+print(result)
+#------
+#24
+
+
+#40 Python Tutorial for Beginners | Recursion
+#40 Python Tutorial for Beginners | Recursion
+#40 Python Tutorial for Beginners | Recursion
+#40 Python Tutorial for Beginners | Recursion
+#40 Python Tutorial for Beginners | Recursion
+#40 Python Tutorial for Beginners | Recursion
+
+
+def greet():
+    print("Hello")
+
+
+greet()
+#------
+#Hello
+
+
+def greet():
+    print("Hello")
+    greet()
+
+
+greet()
+#------
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Hello
+# Traceback (most recent call last):
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 8, in <module>
+#     greet()
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 5, in greet
+#     greet()
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 5, in greet
+#     greet()
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 5, in greet
+#     greet()
+#   [Previous line repeated 993 more times]
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 4, in greet
+#     print("Hello")
+# RecursionError: maximum recursion depth exceeded while calling a Python object
+
+
+import sys
+
+print(sys.getrecursionlimit())
+
+def greet():
+    print("Hello")
+    greet()
+#------
+#1000                #Recurcion - a fucntion calling itself
+
+
+import sys
+
+sys.setrecursionlimit(2000)
+
+print(sys.getrecursionlimit())
+
+def greet():
+    print("Hello")
+    greet()
+#------
+#2000
+
+
+import sys
+
+sys.setrecursionlimit(2000)
+
+print(sys.getrecursionlimit())
+
+i = 0
+
+def greet():
+    global i
+    i+=1
+    print("Hello ", i)
+    greet()
+
+greet()
+#------
+# Hello  1984
+# Hello  1985
+# Hello  1986
+# Hello  1987
+# Hello  1988
+# Hello  1989
+# Hello  1990
+# Hello  1991
+# Hello  1992
+# Hello  1993
+# Hello  1994
+# Hello  1995
+# Hello  1996
+# Traceback (most recent call last):
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 14, in greet
+#     greet()
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 14, in greet
+#     greet()
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 14, in greet
+#     greet()
+#   [Previous line repeated 996 more times]
+#   File "C:\Users\USER\PycharmProjects\Navin Reddy\main.py", line 13, in greet
+#     print("Hello ", i)
+# RecursionError: maximum recursion depth exceeded while calling a Python object
+
+
+#41 Python Tutorial for Beginners | Factorial using Recursion
+#41 Python Tutorial for Beginners | Factorial using Recursion
+#41 Python Tutorial for Beginners | Factorial using Recursion
+#41 Python Tutorial for Beginners | Factorial using Recursion
+#41 Python Tutorial for Beginners | Factorial using Recursion
+#41 Python Tutorial for Beginners | Factorial using Recursion
+
+
+def fact(n):
+
+    if n==0:
+        return 1
+
+    return n * fact(n-1)
+
+
+
+result = fact(5)
+
+
+print(result)
+#------
+#120
+
+#42 Python Tutorial for Beginners | Anonymous Functions | Lambda
+#42 Python Tutorial for Beginners | Anonymous Functions | Lambda
+#42 Python Tutorial for Beginners | Anonymous Functions | Lambda
+#42 Python Tutorial for Beginners | Anonymous Functions | Lambda
+#42 Python Tutorial for Beginners | Anonymous Functions | Lambda
+#42 Python Tutorial for Beginners | Anonymous Functions | Lambda
+
+
+def square(a):
+    return a*a
+
+result = square(5)
+
+print(result)
+#------
+#25
+
+
+f = lambda a,b : a+b
+
+result = f(5,6)
+
+print(result)
+#------
+#11
+
+
+#43 Python Tutorial for Beginners | Filter Map Reduce
+#43 Python Tutorial for Beginners | Filter Map Reduce
+#43 Python Tutorial for Beginners | Filter Map Reduce
+#43 Python Tutorial for Beginners | Filter Map Reduce
+#43 Python Tutorial for Beginners | Filter Map Reduce
+#43 Python Tutorial for Beginners | Filter Map Reduce
+
+def is_even(n):
+    return n%2==0
+
+nums = [3,2,6,8,6,2,9]
+
+evens = list(filter(is_even,nums))
+
+print(evens)
+#------
+#[2, 6, 8, 6, 2]
+
+nums = [3,2,6,8,6,2,9]
+
+evens = list(filter(lambda n : n%2==0,nums))
+
+print(evens)
+#------
+#[2, 6, 8, 6, 2]
+
+
+nums = [3,2,6,8,6,2,9]
+
+evens = list(filter(lambda n : n%2==0,nums))
+
+doubles = list(map(lambda n : n*2,evens))
+
+
+print(doubles)
+#------
+#[4, 12, 16, 12, 4]
+
+
+from functools import reduce
+
+def add_all(a,b):
+    return a+b
+
+nums = [3,2,6,8,4,6,2,9]
+
+evens = list(filter(lambda n : n%2==0,nums))
+
+doubles = list(map(lambda n : n*2,evens))
+
+sum = reduce(add_all, doubles)
+
+print(sum)
+#------
+#56
+
+
+from functools import reduce
+
+def add_all(a,b):
+    return a+b
+
+nums = [3,2,6,8,4,6,2,9]
+
+evens = list(filter(lambda n : n%2==0,nums))
+
+doubles = list(map(lambda n : n*2,evens))
+
+print(doubles)
+
+sum = reduce(lambda a,b : a + b, doubles)
+
+print(sum)
+#------
+#[4, 12, 16, 8, 12, 4]
+#56
+
+
+#44 Python Tutorial for Beginners | Decorators
+#44 Python Tutorial for Beginners | Decorators
+#44 Python Tutorial for Beginners | Decorators
+#44 Python Tutorial for Beginners | Decorators
+#44 Python Tutorial for Beginners | Decorators
+#44 Python Tutorial for Beginners | Decorators
+
+
+def div(a,b):
+    print(a/b)
+
+
+div(4,2)
+#------
+#2.0
+
+
+def div(a,b):
+    print(a/b)
+
+
+div(2,4)
+#------
+#0.5
+
+
+def div(a,b):
+    print(a/b)
+
+
+def smart_dev(func):
+
+    def inner(a,b):
+
+        if a>b:
+            a,b = b,a
+        return func(a,b)
+
+    return inner
+
+
+div(2,4)
+#------
+#0.5
+
+
+def div(a,b):
+    print(a/b)
+
+
+def smart_div(func):
+
+    def inner(a,b):
+
+        if a>b:
+            a,b = b,a
+        return func(a,b)
+
+    return inner
+
+div1 = smart_div(div)
+
+div(2,4)
+#------
+#0.5
+
+
+def div(a,b):
+    print(a/b)
+
+
+def smart_div(func):
+
+    def inner(a,b):
+        if a<b:
+            a,b = b,a
+        return func(a,b)
+
+    return inner
+
+div1 = smart_div(div)
+
+div1(2,4)
+#------
+#2.0
+
+
+
+def div(a,b):
+    print(a/b)
+
+
+def smart_div(func):
+
+    def inner(a,b):
+        if a<b:
+            a,b = b,a
+        return func(a,b)
+
+    return inner
+
+div = smart_div(div)
+
+div(2,4)
+#------
+#2.0
+
+#45 Python Tutorial for Beginners | Modules
+#45 Python Tutorial for Beginners | Modules
+#45 Python Tutorial for Beginners | Modules
+#45 Python Tutorial for Beginners | Modules
+#45 Python Tutorial for Beginners | Modules
+#45 Python Tutorial for Beginners | Modules
+
+from Calc import *
+
+a = 9
+b = 7
+
+c = add(a,b)
+
+print(c)
+#------
+#16
+
+
+from Calc import *
+
+a = 9
+b = 7
+
+c = sub(a,b)
+
+print(c)
+#------
+#2
+
+
+
+
+
+
