@@ -1,0 +1,75 @@
+# 26/02/2021 04:20:00
+# 26/02/2021 06:20:00
+
+# Day -5: Basic Concepts (5hours):  #46 Python Tutorial for Beginners | Special Variable __name__
+# Day -5: Basic Concepts (5hours):  #46 Python Tutorial for Beginners | Special Variable __name__
+# Day -5: Basic Concepts (5hours):  #46 Python Tutorial for Beginners | Special Variable __name__
+# Day -5: Basic Concepts (5hours):  #46 Python Tutorial for Beginners | Special Variable __name__
+# Day -5: Basic Concepts (5hours):  #46 Python Tutorial for Beginners | Special Variable __name__
+# Day -5: Basic Concepts (5hours):  #46 Python Tutorial for Beginners | Special Variable __name__
+
+print(__name__)
+#------
+#__main__
+
+                                          # from Calc.py Module
+                                          #print("Hello")
+                                          #------
+                                          #Hello
+
+                                          # from Calc.py Module
+                                          #print("Hello " + __name__)
+                                          #------
+                                          #Hello __main__
+
+import Calc                               # from Calc.py Module
+                                          #print("Hello " + __name__) 
+print("Demo Says : " + __name__)
+#------
+#Hello Calc
+#Demo Says : __main__
+
+
+print("Hello")
+print("Welcome user")
+#------
+#Hello
+#Welcome User
+
+def main():                              # from Calc.py Module
+                                         #import demo
+
+    print("Hello")
+    print("Welcome user")
+#------                                  #print("Its time to Calculate")
+#Hello
+#Welcome user
+#Its time to Calculate
+
+
+def main():                              # from Calc.py Module
+                                         #import demo
+
+    print("Hello")
+    print("Welcome user")
+                                         #print("Its time to Calculate")
+
+if __name__
+main()
+#------
+#Hello
+
+
+def main():                              # from Calc.py Module
+                                         #import demo
+
+    print("Hello")
+    print("Welcome user")
+                                         #print("Its time to Calculate")
+                                         #------
+if __name__ == "__main__":               #Its time to Calculate
+    main()
+#------
+#Hello
+
+# 26/02/2021 06:20:00
