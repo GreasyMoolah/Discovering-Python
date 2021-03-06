@@ -1,0 +1,339 @@
+# 06/03/2021 17:20:00
+# 06/03/2021 19:20:00
+
+# Day -6: Basic Concepts (5hours):  #47 Python Tutorial for Beginners | Special Variable __name__ part 2
+# Day -6: Basic Concepts (5hours):  #47 Python Tutorial for Beginners | Special Variable __name__ part 2
+# Day -6: Basic Concepts (5hours):  #47 Python Tutorial for Beginners | Special Variable __name__ part 2
+# Day -6: Basic Concepts (5hours):  #47 Python Tutorial for Beginners | Special Variable __name__ part 2
+# Day -6: Basic Concepts (5hours):  #47 Python Tutorial for Beginners | Special Variable __name__ part 2
+# Day -6: Basic Concepts (5hours):  #47 Python Tutorial for Beginners | Special Variable __name__ part 2
+
+def fun1():
+    print("from fun1")
+    
+def fun2():
+    print("from fin2")
+    
+    
+
+fun1()
+fun2()
+#------
+#from fun1
+#from fun2
+
+
+
+def fun1():
+    print("from fun1")
+    
+def fun2():
+    print("from fun2")
+    
+
+
+def main():
+    fun1()
+    fun2()
+    
+main()
+#------
+#from fun1
+#from fun2
+
+
+
+#from Demo.py Module
+from Calc import add                            #from Calc.py Module
+                                                def add():
+def fun1():                                         print("result 1 is ")
+    add()
+    print("from fun1")
+                                                def sub():
+def fun2():                                         print("result 2 is ")
+    print("from fun2")
+
+                                                def main():
+                                                    add()
+def main():                                         sub()
+    fun1()
+    fun2()                                      main()
+                                                #------
+main()                                          #result 1 is
+#------                                         #result 2 is
+#result 1 is
+#result 2 is
+#result 1 is
+#from fun1
+#from fun2
+
+
+
+#from Calc.py Module
+def add():
+    print("result 1 is ", __name__)
+
+    
+def sub():
+    print("result 2 is ")
+
+
+def main():
+    print("in Calc main")
+    add()
+    sub()
+
+if __name__ == "__main__":
+    main()
+#------
+#in Calc main
+#result 1 is __main__
+#result 2 is
+
+
+#from Demo.py Module
+from Calc import add
+
+def fun1():
+    add()
+    print("from fun1")
+
+def fun2():
+    print("from fun2")
+
+
+
+def main():
+    fun1()
+    fun2()
+
+main()
+#------
+#result 1 is Calc
+#from fun1
+#from fun2
+
+
+#48 Python Tutorial for Beginners | Object Oriented Programming | Introduction
+#48 Python Tutorial for Beginners | Object Oriented Programming | Introduction
+#48 Python Tutorial for Beginners | Object Oriented Programming | Introduction
+#48 Python Tutorial for Beginners | Object Oriented Programming | Introduction
+#48 Python Tutorial for Beginners | Object Oriented Programming | Introduction
+#48 Python Tutorial for Beginners | Object Oriented Programming | Introduction
+
+# OOP - Object Oriented Programming
+
+# Python - supports 
+#        Function Programming;
+#        Object Oriented Programming;
+#        Procedure Oriented Programming
+
+- class is a design (like brand) like Motorolla phone
+- Objects are the real stuff, in this case - a cellphone; an instance of a class
+
+
+#49 Python Tutorial for Beginners | Class and Object
+#49 Python Tutorial for Beginners | Class and Object
+#49 Python Tutorial for Beginners | Class and Object
+#49 Python Tutorial for Beginners | Class and Object
+#49 Python Tutorial for Beginners | Class and Object
+#49 Python Tutorial for Beginners | Class and Object
+
+#- class is the blueprint
+
+class Computer:                 #Attributes -> Variables
+                                #Behaviour ->  Methods[Function]
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+a = 5
+com1 = Computer()
+
+print(type(com1))
+#------
+#<class "__main__.Computer'>
+
+
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+a = '8'
+print(type(a))
+
+com1 = Computer()
+
+print(type(com1))
+#------
+#<class "__main__.Computer'>
+
+
+
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+a = '8'
+print(type(a))
+
+com1 = Computer()
+
+print(type(com1))
+#------
+#<class ''str'>
+#<class '__main__.Computer'>
+
+
+
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+x = 9
+print(type(x))
+
+a = '8'
+print(type(a))
+
+com1 = Computer()
+
+print(type(com1))
+#------
+#<class ''int'>
+#<class ''str'>
+#<class '__main__.Computer'>
+
+
+
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+
+com1 = Computer()
+
+
+Computer.config()
+#------
+#Error
+
+
+
+
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+
+com1 = Computer()
+
+
+Computer.config(com1)
+#------
+#i5. 16gb, 1TB
+
+
+
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+
+com1 = Computer()
+com2 = Computer()
+
+Computer.config(com1)
+Computer.config(com2)
+#------
+#i5. 16gb, 1TB
+#i5. 16gb, 1TB
+
+
+
+class Computer:
+
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+
+com1 = Computer()
+com2 = Computer()
+
+Computer.config(com1)
+Computer.config(com2)
+
+com1.config()
+com2.config()
+#------
+#i5. 16gb, 1TB
+#i5. 16gb, 1TB
+#i5. 16gb, 1TB
+#i5. 16gb, 1TB
+
+
+#50 Python Tutorial for Beginners | __init__ method
+#50 Python Tutorial for Beginners | __init__ method
+#50 Python Tutorial for Beginners | __init__ method
+#50 Python Tutorial for Beginners | __init__ method
+#50 Python Tutorial for Beginners | __init__ method
+#50 Python Tutorial for Beginners | __init__ method
+
+class Computer:
+
+    def __init__(self):
+        print("in init")
+
+    def config(self):
+        print("i5, 16gb, 1TB")
+
+
+com1 = Computer()
+com2 = Computer()
+
+com1.config()
+com2.config()
+#------
+#in init
+#in init
+#i5. 16gb, 1TB
+#i5. 16gb, 1TB
+
+
+
+class Computer:
+
+    def __init__(self,cpu,ram):
+        self.cpu = cpu
+        self.ram = ram
+
+
+    def config(self):
+        print("Config is ", self.cpu, self.ram)
+
+
+com1 = Computer('i5',16)
+com2 = Computer('Ryzen 3',8)
+
+com1.config()
+com2.config()
+#------
+#Config is i5 16
+#Config is Ryzen 3 8
+
+
+
+
